@@ -1,0 +1,23 @@
+1. Briefly summarize The Gaming Room client and their software requirements. Who was the client? What type of software did they want you to design?
+
+The client was The Gaming Room, creators of the Android game Draw it or Lose it. They requested a web-based, multi-platform version of the game to expand beyond Android and support multiple teams, multiple players, unique identifiers and strict control so that only one instance of the game exist in memory at a time. Their requirements included distributed architecture, unique gaming, secure communications and the use of design patterns such as Singleton and Iterator.
+
+2. What did you do particularly well in developing this documentation?
+
+I would say that I did good job organizing the document and directly addressing each required section. The Requirements, Design Constraints, and Evaluation sections were especially strong because they explained not just what the system needed but why those needs shaped the architecture. I also effectively connected the client's goal to specific design patterns and platforms decisions, demonstrating a solid understanding of how the system should behave.
+
+3. What about the process of working through a design document did you find helpful when developing the code?
+
+Working through the design document forced me to think about the structure of the system before writing any code. Defining the domain model, identifying constraints and mapping out the architecture made the coding process more predictable and reduced guesswork. Understanding the relationship between Game, Team, Player, and GameService helped ensure that final implementation followed object-oriented principles and met the client's requirements for uniqueness and controlled instantiation.
+
+4. If you could choose one part of your work on these documents to revise, what would you pick? How would you improve it?
+
+If I were to revise one part, I would refine the System Architecture View. Although the project did not require detailed architecture diagrams, adding a clearer description of the communication flow, server-client interactions and memory management would make the document more complete. I would include a simple topology diagram and expand on how the Singleton service interacts with distributed clients.
+
+5. How did you interpret the user’s needs and implement them into your software design? Why is it so important to consider the user’s needs when designing?
+
+I interpreted the user's needs by translating their business goals scalability, multiplatform access, unique identifiers and single-instance control into concrete technical requirements. This led to design choices such as using the Singleton pattern, enforcing unique naming through iteration and selecting Linux for hosting due to its scalability and cost-effectiveness. Considering user needs is essential because the software must solve their problem not just meet technical standards. A design that aligns with user goals ensures usability, maintainability and long-term success.
+
+6. How did you approach designing software? What techniques or strategies would you use in the future to analyze and design a similar software application?
+
+I approached the design by breaking the problem into layers: From requirements to constraints to architecture to domain model to evaluation and finally recommendation. This structured method ensured that each decision waws justified and aligned with the client's goal. In the future I would continue using techniques such as UML modeling, design pattern selection, platform evaluation, and early identification of scalability and security needs. I would also incorporate more visual diagrams to improve clarity and communications with stakeholders.
